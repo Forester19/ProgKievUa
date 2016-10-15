@@ -7,29 +7,35 @@ import java.util.Random;
  * Created by Владислав on 13.10.2016.
  */
 public class Network {
-     private Random random = new Random();
-    private List phones;
-    int number;
-    int NUM;
-
-    public int registrationPhone(List<Phone> phone){
-        this.phones = phone;
-
-
-        int numberN = number + random.nextInt(10000)+ 10000;
-        System.out.println(numberN);
-        return numberN;
+    private Phone phone1 = new Phone(123);
+    private Phone phone2 = new Phone(234);
+    private Phone phone3 = new Phone(456);
+    private Phone phone4 = new Phone(567);
+    private Phone phone5 = new Phone(678);
+ private List<Phone> phones;
+    public void allGroup(List<Phone> phones){
+        System.out.println("All numbers of phones: ");
+        phone1.registr();
+        phone2.registr();
+        phone3.registr();
+        phone4.registr();
+        phone5.registr();
+        phones.add(phone1);
+        phones.add(phone2);
+        phones.add(phone3);
+        phones.add(phone4);
+        phones.add(phone5);
+        this.phones =phones;
     }
-
-    public void CallToSomeOne(List<Phone> phone,Integer NUM){
-
-        for(int i =0; i<phone.size(); i++) {
-            if (NUM != number){
-                System.out.println("All right now you have calling to: " + NUM);
-            }else System.out.println("Error!! you have not this number");
+    public void teltphonia(List<Phone> phones){
+        this.phones=phones;
+        for (int p =0; p<phones.size(); p++) {
+            phones.get(p).registr();
         }
-
     }
+
+
+
 
 
 
