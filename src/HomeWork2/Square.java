@@ -4,11 +4,17 @@ package HomeWork2;
  * Created by Владислав on 16.10.2016.
  */
 public class Square extends Shape {
-    Point A = new Point(1,1);
-    Point B = new Point(3,1);
-    Point C = new Point(1,3);
-    Point D = new Point(3,3);
+    private Point A = new Point(1,1);
+    private Point B = new Point(3,1);
+    private Point C = new Point(1,3);
+    private Point D = new Point(3,3);
 
+    public Square(Point a, Point b, Point c, Point d) {
+        A = a;
+        B = b;
+        C = c;
+        D = d;
+    }
 
     double a = Math.sqrt(Math.pow(B.getX()-A.getX(),2) + Math.pow(B.getY()-A.getY(),2));
     double b = Math.sqrt(Math.pow(C.getX()-A.getX(),2) + Math.pow(C.getY()-A.getY(),2));

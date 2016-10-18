@@ -4,8 +4,8 @@ package HomeWork2;
  * Created by Владислав on 15.10.2016.
  */
 public class Point {
-    public double x;
-    public double y;
+    private double x;
+    private double y;
 
     public Point(double x, double y) {
         this.x = x;

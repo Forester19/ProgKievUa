@@ -5,10 +5,15 @@ package HomeWork2;
  */
 public class Triagle extends Shape {
 
+    private Point A = new Point(1,1);
+    private Point B = new Point(1,3);
+    private Point C = new Point(3,1);
 
-    Point A = new Point(1, 1);
-    Point B = new Point(2, 1);
-    Point C = new Point(2, 3);
+    public Triagle(Point a, Point b, Point c) {
+        A = a;
+        B = b;
+        C = c;
+    }
 
 
     double a = Math.sqrt(Math.pow(B.getX() - A.getX(), 2) + Math.pow(B.getY() - A.getY(), 2));
