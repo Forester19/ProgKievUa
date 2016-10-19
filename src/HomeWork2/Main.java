@@ -13,8 +13,6 @@ public class Main {
         Point C = new Point(1, 3);
         Point D = new Point(3, 3);
 
-        Shape[] shapes = new Shape[4];
-
         Triagle triagle = new Triagle(A,B,C);
         triagle.getPerimetr();
         triagle.getArea();
@@ -32,6 +30,7 @@ public class Main {
         b.addShape(1,circle);
         b.addShape(2,square);
         b.addShape(3,triagle);
+        b.addShape(1,triagle);
         b.showAllOfShapesAndSummaryArea();
 
     }

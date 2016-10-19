@@ -7,10 +7,15 @@ import java.util.List;
  * Created by Владислав on 16.10.2016.
  */
 public class Board {
+
     private Shape[] shapes = new Shape[4];
 
     public void addShape(Integer i, Shape s) {
-        shapes[i] =s;
+        if(shapes[i] != null ){
+            System.out.println("in this place " + s.toString());
+        }else {
+            shapes[i] =s;
+        }
     }
 
 
