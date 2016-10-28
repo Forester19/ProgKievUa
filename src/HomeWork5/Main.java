@@ -16,7 +16,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        MyDocFileFilter myDocFileFilter = new MyDocFileFilter("doc");
+        MyDocFileFilter myDocFileFilter = new MyDocFileFilter();
         File file = new File(".");
         File[] files = file.listFiles(myDocFileFilter);
         for (int i =0; i<files.length; i++){

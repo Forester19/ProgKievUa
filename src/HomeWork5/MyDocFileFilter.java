@@ -7,17 +7,15 @@ import java.io.FileFilter;
  * Created by Владислав on 27.10.2016.
  */
 public class MyDocFileFilter implements FileFilter {
-    String[] names;
+    String names = "doc";
 
-    public MyDocFileFilter(String... names) {
-        this.names = names;
-    }
+
     public boolean check(String n){
-        for (String s:names) {
-            if (s.equals(n)){
+
+            if (names.equals(n)){
                 return true;
             }
-        }
+
         return false;
     }
 
