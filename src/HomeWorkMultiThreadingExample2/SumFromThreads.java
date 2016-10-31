@@ -37,6 +37,10 @@ return sum;
         return sum;
     }
 
+    public void setSum(int sum) {
+        this.sum = sum;
+    }
+
     @Override
     public void run() {
             start();
