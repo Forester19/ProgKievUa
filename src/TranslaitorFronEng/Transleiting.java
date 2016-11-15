@@ -42,4 +42,8 @@ public class Transleiting {
 
 
     }
+
+    public StringBuilder getSb() {
+        return sb;
+    }
 }
